@@ -67,6 +67,12 @@
 
 
         <style type="text/css">
+
+            .carousel-wrap {
+                width: 100%;
+                margin: auto;
+                position: relative;
+            }
             .owl-carousel .owl-nav {
                 overflow: hidden;
                 height: 0px;
@@ -1102,8 +1108,9 @@
             }
 
             .topLogo {
-                /* margin-top: 20px; */
+                /*margin-top: 20px;*/
             }
+
 
             .showFastestTextDesktop {
                 display: contents;
@@ -1128,9 +1135,9 @@
             }
 
             .mobileNewjLogo {
-                width: 400px;
-                height: 400px;
-                margin-top: 50px;
+                width: 700px;
+                height: 400px; 
+                margin-top: 5px;
             }
 
             .play-button {
@@ -1316,6 +1323,25 @@
                     border-bottom: none;
                 }
 
+                .stay-connected {
+                    text-align: -webkit-center;
+                    text-align: -moz-center;
+                    font-size: 50px;
+                }
+
+                .inner-line {
+                    font-size: 20px;
+                    padding-left: 95px;
+                }
+
+                .social-icon {
+                    padding-top: 110px;
+                }
+
+                .section8CenterImg {
+                    transform: rotate(90deg);
+                }
+
                 .headerFixed {
                     width: max-content;
                     position: fixed;
@@ -1433,6 +1459,13 @@
                     position: relative;
                 }
 
+                /* .section11 {
+                    height: 905px;
+                    position: relative;
+                    text-align: -webkit-center;
+                    text-align: -moz-center;
+                } */
+
                 .owlSlider1 .nav-btn {
                     height: 50px;
                     position: absolute;
@@ -1459,6 +1492,18 @@
 
                 .owlSlider4 .next-slide-white {
                     background: url(resources/front_end_assets/images/nav-icon-white.png) no-repeat scroll -24px 0px;
+                }
+
+                .section011leftImg {
+                    position: relative;
+                    max-width: 31%;
+                    margin-top: -22%;
+                }
+
+                .section011rightImg {
+                    position: relative;
+                    width: 40%;
+                    margin-top: -24%;
                 }
 
                 .section12leftImg {
@@ -2105,8 +2150,10 @@
                 .newjLogoScrollClass {
                     /*margin-right: 8%;*/
                     background-color: #000;
-                    color: white;
-                    width: 5%;
+                    color: white; 
+                    width: -5%;
+                    /* mix-blend-mode: multiply; */
+
                 }
 
                 .sliderImageClassLogo {
@@ -2314,7 +2361,7 @@
                                                 <div class="carousel-item active">
                                                     <div class="desktopBannerGif">
                                                         <img class="d-block w-5 mobileNewjLogo"
-                                                            src="resources\front_end_assets\images_final\WK2whitebg.png"
+                                                            src="resources\front_end_assets\images_latest\WK2whitebg-removebg-preview.png"
                                                             alt="NEWJ">
                                                     </div>
                                                 </div>
@@ -2852,32 +2899,33 @@
 
                     <section class="section11">
                         <div class="pull-left section011leftImg">
-                            <img class="img-responsive" style=""
-                                src="resources/front_end_assets/images_final/cup_image1.png" alt="">
+                            <img class="img-responsive" src="resources/front_end_assets/images_final/cup_image1.png"
+                                alt="">
                         </div>
                         <div class="pull-right section011rightImg">
                             <img class="img-responsive" src="resources/front_end_assets/images_final/lens1.png" alt="">
                         </div>
                         <div class="container">
-                            <p class="stay-connected">Stay <p class="inner">Connected</p></p>
+                            <p class="stay-connected">Stay Connected</p>
                             <p class="inner-line">Lorem ipsum dolor sit amet, consectetur<br>
-                                adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et sed do eiusmod tempor<br> incididunt 
+                                adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et sed do eiusmod
+                                tempor<br> incididunt
                                 dolore magna aliqua.</p>
-                      
-                       <div class="social-icon">
+
+                            <div class="social-icon">
                                 <i class="twitter fab fa-twitter fa-5x"></i>
-                           
+
                                 <i class="facebook fab fa-facebook-f fa-5x"></i>
-                          
+
                                 <i class="instagram fab fa-instagram fa-5x"></i>
                                 <i class="envelope fas fa-envelope fa-5x"></i>
 
                             </div>
                         </div>
 
-                       
+
                     </section>
-                        <!-- <div class="row">
+                    <!-- <div class="row">
                             <div class="col-lg-6">
 
                                 <p class="stay-connected">Stay </p>
@@ -2908,7 +2956,7 @@
                         </div> -->
 
 
-                        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
                                     </li>
@@ -2961,11 +3009,11 @@
                                 </div> -->
 
 
-                        <script type="text/javascript">
-                            jQuery('.carousel').carousel({
-                                interval: 3000
-                            })
-                        </script>
+                    <script type="text/javascript">
+                        jQuery('.carousel').carousel({
+                            interval: 3000
+                        })
+                    </script>
 
                     </section>
 
@@ -3148,8 +3196,8 @@
                 if (file != undefined || file != null) {
                     ext = file.name.split('.').pop().toLowerCase()
                 }
-                if ($.inArray(ext, ['docx', 'rtf', 'doc', 'pdf']) == -1 && $('.areaCategory').val() ==
-                    "6") {
+                if ($.inArray(ext, ['docx', 'rtf', 'doc', 'pdf']) == -1 && $('.areaCategory')
+                .val() == "6") {
                     $('.file-error-msg').show();
                     event.preventDefault();
                 } else {
@@ -3171,8 +3219,8 @@
                     form_data.append("areaCategory", areaCategory);
                     form_data.append("areaMsg", areaMsg);
                     form_data.append("areaDeparmentId", areaDeparmentId);
-                    if (areaName != '' && areaEmail != '' && areaMobile != '' && areaCategory != '' &&
-                        areaMsg != '') {
+                    if (areaName != '' && areaEmail != '' && areaMobile != '' && areaCategory !=
+                        '' && areaMsg != '') {
                         $('.contactSubmitBtn').attr('disabled', true);
                         $('.plsWaitDiv').removeClass('hide');
                         $('.plsWaitDiv').addClass('show');
@@ -3369,12 +3417,12 @@
             });
             $('html, body').scroll(function () {
                 var top_of_element = $(".videoSliderSection").offset().top;
-                var bottom_of_element = $(".videoSliderSection").offset().top + $(".videoSliderSection")
-                    .outerHeight();
+                var bottom_of_element = $(".videoSliderSection").offset().top + $(
+                    ".videoSliderSection").outerHeight();
                 var bottom_of_screen = $('html, body').scrollTop() + $('html, body').innerHeight();
                 var top_of_screen = $('html, body').scrollTop();
                 if ((bottom_of_screen > top_of_element) && (top_of_screen <
-                        bottom_of_element)) {} else {
+                    bottom_of_element)) {} else {
                     $('.owlSlider4').trigger('play.owl.autoplay');
                     $('.embd-iframe').remove();
                     $('.bbfb-thumb').show();
@@ -3395,7 +3443,7 @@
                     $(this).children().hide();
                     $(this).append('<iframe class="embd-iframe" src="' + href +
                         '" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>'
-                    );
+                        );
                     $(this).attr('class', 'video bbfb-video');
                     $('.owlSlider4').on('mouseleave', function () {
                         $('.owlSlider4').trigger('stop.owl.autoplay');
