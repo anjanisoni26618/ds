@@ -37,9 +37,6 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-
-
-
 html, body, .site-wrapper {
   scroll-behavior: smooth;
   height: 100%; }
@@ -3529,8 +3526,8 @@ nav.side-menu > ul > li {
   @media (max-width: 699px ){
     .section8CenterImg{
       transform: rotate(90deg);
-      
     }
+
 
     .procesFlowText1{
       
@@ -3547,36 +3544,41 @@ nav.side-menu > ul > li {
     padding-left: 15%;
   }
 
-   .inner{
+   /* .inner{
     font-family: "Montserrant";
     font-weight: 900;
     font-size: 70px;
     text-align: left;
     padding-top: 3%;
     padding-left: 18%;
-   }
+   } */
 
     .inner-line{
       color: #555555;
       font-family: "Montserrant";
       font-size: 25px;
       padding-left: 270px;
-      padding-top: 35px;   
+      padding-top: 35px;  
+      text-align: left; 
     }
  
 .social-icon{
   text-align: center;
-  padding-top: 200px;
-
-  
+  padding-top: 200px; 
 } 
 
-.twitter {
-  
+/* .social-icon:hover{
+  color: #ff4c68;
+} */
+
+.twitter{
   padding-left: 8px; 
-
-
+  
   } 
+
+.twitter:hover{
+  color: #fff;
+}
   
 .facebook {
 
@@ -3584,6 +3586,9 @@ nav.side-menu > ul > li {
 
 } 
 
+.facebook:hover{
+  color: #fff;
+}
 
 .instagram{
 
@@ -3591,10 +3596,18 @@ nav.side-menu > ul > li {
 
 } 
 
+.instagram:hover{
+  color: #fff;
+}
+
 .envelope {
   
   margin-left: 5%;
 
+}
+
+.envelope:hover{
+  color: #fff;
 }
 
  
